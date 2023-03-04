@@ -6,6 +6,7 @@ main {
         height: 450px;
         background-color: $Dark-Blue;
         border-radius: 25px;
+        margin: 0 1rem;
 
         &__rating-card {
             padding: 2rem;
@@ -75,9 +76,9 @@ main {
 
             &__rating {
                 background-color: $Circle-bg;
-                max-width: 60%;
+                max-width: fit-content;
                 margin: 2rem auto;
-                padding: 0.3rem 0;
+                padding: 0.3rem 1rem;
                 border-radius: 30px;
                 color: $Orange;
             }
@@ -89,4 +90,9 @@ main {
         }
     }
 
+    @media (max-width:425px) {
+        .card {
+            height: 460px;
+        }
+    }
 }
